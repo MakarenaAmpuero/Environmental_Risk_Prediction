@@ -1,12 +1,22 @@
-# Environmental Risk Prediction - Initial Dataset Analysis and Problem Selection
+# Environmental Compliance Risk Prediction - Machine Learning Deployment
 
 ## Project Description
 
-This project focuses on the exploration and evaluation of multiple environmental datasets to identify a suitable Machine Learning problem.
+This project develops an end-to-end Machine Learning solution for predicting environmental compliance risk levels.
 
-The objective of this stage is to perform an initial Exploratory Data Analysis (EDA) on four different environmental datasets, evaluate their characteristics, identify data quality challenges, and select the most appropriate dataset for future Machine Learning model development.
+The objective is to classify projects according to their probability of environmental non-compliance risk (Low, Medium, High), supporting preventive monitoring, resource prioritization, and data-driven environmental management.
 
-The analysis includes data exploration, descriptive statistics, missing value detection, outlier analysis, data visualization, and problem definition.
+The project includes:
+
+- Exploratory Data Analysis (EDA)
+- Data preprocessing pipeline
+- Feature engineering
+- Machine Learning model comparison
+- Hyperparameter optimization
+- Model evaluation
+- API deployment using FastAPI
+- Cloud deployment using Azure Virtual Machine
+- CI/CD workflow with GitHub Actions
 
 ---
 
@@ -119,24 +129,50 @@ The Environmental Compliance Risk dataset was selected because it provides the m
 The future objective is to train and evaluate classification models capable of identifying environmental non-compliance risk patterns.
 
 ---
+# Model Performance
+
+Final selected model:
+
+🌳 Optimized Decision Tree Classifier
+
+Results:
+
+- F1 Score: 99.7%
+- High accuracy across Low, Medium and High risk categories
+
+The model was evaluated using:
+
+- Classification Report
+- Confusion Matrix
+- Performance metrics
+---
 
 # Repository Structure
 
 ```text
 Environmental_Risk_Prediction
 
+├── app
+│   ├── main.py
+│   └── schemas.py
 │
 ├── datasets
-│   ├── Dataset files
 │
 ├── images
-│   ├── Visualization resources
+│   ├── Visualizations
+│
+├── models
 │
 ├── notebooks
-│   ├── Exploratory Data Analysis notebooks
+│   ├── EDA
+│   └── Model Development
 │
 ├── selected_dataset
-│   ├── Final selected dataset
+│
+├── .github/workflows
+│   └── CI pipeline
+│
+├── requirements.txt
 │
 └── README.md
 ```
@@ -186,6 +222,7 @@ All dataset selection decisions, analytical processes, data cleaning strategies,
 Role: Data Science Student
 
 ---
+
 
 # License
 
